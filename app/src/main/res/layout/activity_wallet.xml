@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalletActivity">
+
+  <TextView
+      android:id="@+id/txt_info"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:padding="8dp"
+      android:text="@string/activity_wallet_info"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+      app:layout_constraintBottom_toTopOf="@id/txt_balance"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/btn_die"
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:text="@string/zero"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="DuplicateSpeakableTextCheck" />
+
+  <TextView
+      android:id="@+id/txt_balance_txt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/coins"
+      app:layout_constraintBottom_toTopOf="@+id/btn_die"
+      app:layout_constraintEnd_toStartOf="@+id/txt_balance"
+      app:layout_constraintStart_toStartOf="@+id/btn_die"
+      app:layout_constraintTop_toBottomOf="@+id/txt_info" />
+
+  <TextView
+      android:id="@+id/txt_balance"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:text="@string/activity_wallet_coins_amt"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      app:layout_constraintBottom_toTopOf="@id/btn_die"
+      app:layout_constraintEnd_toEndOf="@id/btn_die"
+      app:layout_constraintStart_toEndOf="@id/txt_balance_txt"
+      />
+
+  <Button
+      android:id="@+id/btn_launch_twoormore"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="90dp"
+      android:text="@string/two_or_more"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btn_die" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
